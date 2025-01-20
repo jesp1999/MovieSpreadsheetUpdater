@@ -1,1 +1,7 @@
-google_credentials.json
+*_credentials.json
+*.db
+*.env
+*.sqlite
+in/
+out/
+.idea/

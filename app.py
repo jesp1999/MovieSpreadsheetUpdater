@@ -324,6 +324,8 @@ def export_gspread_media_data(media_type: MEDIA_TYPE, cursor):
 def init_db(cursor):
     print('Initializing the database...')
     cursor.execute('''
+        ATTACH DATABASE 'movie_data.db' AS movie_data;
+        
         CREATE TABLE IF NOT EXISTS movie (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         title VARCHAR(255) NOT NULL,

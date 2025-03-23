@@ -1,0 +1,7 @@
+*_credentials.json
+*.env
+in/
+out/
+.idea/
+*.db
+*.sqlite
